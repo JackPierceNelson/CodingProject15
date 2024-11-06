@@ -9,10 +9,11 @@ const assets = [
     { id: 5, name: "Corporate Bond XYZ.", type: "bond", price: 102.50, quantity: 200 }
 ];
 
-// Export the assets array
+// Export the assets array making it available for use in other modules
 export {assets};
 
-// Export the getAssetById function
+// Export the getAssetById function, uses the find() method to search the assets array for
+// an asset with a matching ID else undefined
 export function getAssetById(id) {
     return assets.find(asset => asset.id === id);
 }
