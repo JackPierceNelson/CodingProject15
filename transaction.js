@@ -41,9 +41,12 @@ export class Transaction {
     }
 }
 
+/*
 try {
     new Transaction(1, 'buy', 10); // Buy units of asset with ID 1
     new Transaction(2, 'sell', 5); // Sell 5 units of assets with ID 2
 } catch (error) {
     console.error(error.message);
 }
+    */
+   

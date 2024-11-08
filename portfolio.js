@@ -1,7 +1,7 @@
 // Task 2: Create the Portfolio Module
 
 // Import the assets array from asset.js
-import {assets} from './assets.js';
+import { assets } from './asset.js';
 
 // Function to calculate the total value of the portfolio, uses the reduce() method
 // to sum up the total value of all assets in the portfolio

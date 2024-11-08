@@ -1,12 +1,26 @@
 // Task 4: Create the Main Application
 
 // Import calculatePortfolioValue, getPortfolioAllocation, and Transaction class
-import {calculatePortfolioValue, getPortfolioAllocation} from './portfolio.js';
+import { calculatePortfolioValue, getPortfolioAllocation } from './portfolio.js';
 import { Transaction } from './transaction.js';
-import { assets } from './asset';
+import { assets } from './asset.js';
 
 console.log("Financial Portfolio Management System");
 console.log("=========================================");
+
+/*
+
+fetch('http://localhost:3000/api/portfolio')
+.then(response => response.json())
+.then(data => {
+    console.log('Portfolio Data', data);
+    updatePortfolioDisplay();
+}).catch (error => console.error('Error:', error));
+
+function updatePortfolioDisplay(portfolioData) {
+    
+*/
+
 
 // Display initial portfolio details - the total portfolio value
 console.log("\nInitial Portfolio Details:");
@@ -43,3 +57,12 @@ console.log("\nUpdated Portfolio Allocation:");
 getPortfolioAllocation().forEach(asset => {
     console.log(`${asset.name} (${asset.type}): ${asset.allocation}%`);
 });
+
+// Display current asset quantities
+console.log("\nCurrent Asset Quantities:");
+assets.forEach(asset => {
+   console.log(`${asset.name}: ${asset.quantity} units`);
+});
+
+
+ 
